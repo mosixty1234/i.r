@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I.R LESOLANG SCHOOL</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="container">
+      <!-- Logo on the left -->
+      <img src="img/logo.jpg" alt="School Logo" class="logo-img" />
+
+      <!-- Branding and Navigation -->
+      <div style="display: flex; flex-direction: column; width: 100%;">
+        <!-- School Name -->
+        <div class="branding">
+          <div class="school-name">
+            <span class="gold">I.R.</span>
+            <span class="white">LESOLANG</span>
+            <span class="blue">SECONDARY SCHOOL</span>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile Hamburger Menu -->
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to I.R. Lesolang Secondary School</h1>
+      <p>Empowering students for a brighter future with excellence in education and values.</p>
+      <a href="#admissions" class="btn btn-primary">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Other sections here (About, Academics, Admissions, Contact) -->
+
+  <script>
+    // Mobile menu toggle script
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav ul');
+
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f6f8;
+        color: #222;
+        line-height: 1.6;
+      }
+  
+      /* Container */
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+  
+      /* Header Styling */
+      .main-header {
+        background: linear-gradient(to right, #002f5e, #003a70);
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        padding: 20px 0;
+      }
+  
+      /* Header container - stacked vertically */
+      .main-header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+  
+      /* Logo styling - centered */
+      .logo-img {
+        width: 230px;
+        height: 350x;
+        object-fit: cover;
+        background: white;
+        padding: 14px;
+        border: 4px solid #ffcc00;
+        border-radius: 14px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease;
+        cursor: default;
+      }
+  
+      .logo-img:hover {
+        transform: scale(1.03);
+      }
+  
+      /* Branding container */
+      .branding {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+      }
+  
+      .school-name {
+        font-weight: 700;
+        font-size: 28px;
+        white-space: nowrap;
+        display: flex;
+        gap: 18px;
+        user-select: none;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      }
+  
+      .school-name span.gold {
+        color: #ffd700; /* Brighter gold */
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+      }
+  
+      .school-name span.white {
+        color: #fff;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+      }
+  
+      .school-name span.blue {
+        color: #66ccff;
+        text-shadow: 0 0 5px rgba(102, 204, 255, 0.3);
+      }
+  
+      /* Navigation */
+      .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        padding: 20;
+        margin: 10;
+        flex-wrap: wrap;
+      }
+  
+      .nav li {
+        position: relative;
+      }
+  
+      .nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 8px 0;
+        position: relative;
+        transition: color 0.3s ease;
+        font-size: 17px;
+      }
+  
+      .nav a.active,
+      .nav a:hover {
+        color: #ffcc00;
+      }
+  
+      .nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: #ffcc00;
+        transition: width 0.3s ease;
+        border-radius: 2px;
+      }
+  
+      .nav a:hover::after,
+      .nav a.active::after {
+        width: 100%;
+      }
+  
+      /* Mobile Navigation Toggle */
+      .nav-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        width: 30px;
+        height: 22px;
+        position: relative;
+        z-index: 1000;
+      }
+  
+      .nav-toggle .hamburger,
+      .nav-toggle.open .hamburger {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+  
+      .nav-toggle .hamburger::before,
+      .nav-toggle .hamburger::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+  
+      .nav-toggle .hamburger::before {
+        top: -10px;
+      }
+  
+      .nav-toggle .hamburger::after {
+        bottom: -10px;
+      }
+  
+      .nav-toggle.open .hamburger {
+        background: transparent;
+      }
+  
+      .nav-toggle.open .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+  
+      .nav-toggle.open .hamburger::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+      }
+  
+      /* Hero Section */
+      .hero {
+        background: url('../img/school-hero.jpg') no-repeat center center/cover;
+        padding: 100px 20px;
+        color: #002f5e;
+        text-align: center;
+      }
+  
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 0 1px 3px rgba(255 255 255, 0.8);
+      }
+  
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 0 1px 2px rgba(255 255 255, 0.7);
+      }
+  
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        font-weight: 600;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        text-decoration: none;
+      }
+  
+      .btn-primary {
+        background-color: #ffcc00;
+        color: #003a70;
+        box-shadow: 0 4px 12px rgba(255 204 0, 0.5);
+      }
+  
+      .btn-primary:hover {
+        background-color: #e6b800;
+      }
+  
+      /* Responsive */
+      @media (max-width: 992px) {
+        .logo-img {
+          width: 340px;
+          height: 230px;
+        }
+        
+        .school-name {
+          font-size: 28px;
+        }
+        
+        .nav ul {
+          gap: 30px;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .logo-img {
+          width: 280px;
+          height: 190px;
+        }
+        
+        .school-name {
+          font-size: 24px;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        
+        .nav ul {
+          gap: 20px;
+        }
+        
+        .nav a {
+          font-size: 16px;
+        }
+      }
+  
+      @media (max-width: 576px) {
+        .logo-img {
+          width: 130px;
+          height: 150px;
+        }
+        
+        .school-name {
+          font-size: 18px;
+          justify-content: center;
+        }
+        
+        .nav ul {
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
+          display: none;
+        }
+        
+        .nav ul.nav-open {
+          display: flex;
+        }
+        
+        .nav-toggle {
+          display: block;
+          margin-top: 15px;
+        }
+        
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+  
+        .hero p {
+          font-size: 1rem;
+        }
+      }
