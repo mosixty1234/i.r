@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I.R LESOLANG SCHOOL</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <img src="img/logo2.jpg" alt=" Logo" class="logo-img">
+	  <div class="header-divider"></div>
+	  <img src="img/logo.jpg" alt=" Logo" class="logo-img">
+      <div class="branding">
+        <div class="school-name">
+          <span>I.R</span>
+          <span>LESOLANG</span>
+          <span>SECONDARY</span>
+          <span>SCHOOL</span>
+        </div>
+        <div class="school-motto">Labor omnia vincet</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#admissions">Donate</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <!-- Mobile Hamburger Menu -->
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    </div>
+  </header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Bright Futures | Donate to Greenfield High School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .donation-header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    .donation-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .donation-header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn-main {
+      background: white;
+      color: var(--primary);
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn-main:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Impact Section */
+    .impact-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .impact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .impact-card {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 280px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .impact-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .impact-card i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .impact-card h3 {
+      margin-bottom: 1rem;
+      color: var(--secondary);
+    }
+
+    /* Donation Options */
+    .donation-options {
+      background: var(--secondary);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .option-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .option-card {
+      background: white;
+      color: var(--dark);
+      border-radius: 10px;
+      padding: 2rem;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .option-card h3 {
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .option-card .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+
+    .option-card ul {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .option-card ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .option-card ul li:before {
+      content: "✓";
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+    }
+
+    .btn-donate {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-donate:hover {
+      background: #3d8b40;
+      transform: translateY(-2px);
+    }
+
+    /* Testimonials */
+    .testimonial-section {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: var(--light);
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .testimonial {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 350px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
+      float: left;
+    }
+
+    .testimonial .quote {
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    .testimonial .author {
+      font-weight: 600;
+      color: var(--secondary);
+    }
+
+    /* Donation Form */
+    .donation-form-section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .donation-form {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .amount-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .amount-option {
+      background: #f0f0f0;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .amount-option:hover, .amount-option.active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .payment-methods {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .payment-method {
+      flex: 1;
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .payment-method:hover, .payment-method.active {
+      border-color: var(--primary);
+      background: rgba(76, 175, 80, 0.1);
+    }
+
+    .payment-method i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--secondary);
+    }
+
+    .btn-submit {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 1rem;
+      transition: all 0.3s;
+    }
+
+    .btn-submit:hover {
+      background: #3d8b40;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .security-note {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .security-note i {
+      color: var(--primary);
+      margin-right: 0.3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .donation-header h1 {
+        font-size: 2rem;
+      }
+      
+      .impact-cards, .option-cards, .testimonials {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .payment-methods {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="donation-header">
+    <h1>Help Shape the Future of Our Students</h1>
+    <p>Your donation directly supports Greenfield High School's mission to provide quality education, resources, and opportunities to deserving students.</p>
+    <a href="#donate-now" class="btn-main">Donate Now <i class="fas fa-arrow-right"></i></a>
+  </header>
+
+  <!-- Impact Section -->
+  <section class="impact-section">
+    <h2>Your Impact Matters</h2>
+    <p>Every contribution helps us achieve our goals and transform young lives.</p>
+    
+    <div class="impact-cards">
+      <div class="impact-card">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Education Access</h3>
+        <p>Sponsor a student's tuition, books, and supplies for a full year.</p>
+      </div>
+      
+      <div class="impact-card">
+        <i class="fas fa-laptop"></i>
+        <h3>Technology</h3>
+        <p>Fund computers and STEM lab equipment for hands-on learning.</p>
+      </div>
+      
+      <div class="impact-card">
+        <i class="fas fa-utensils"></i>
+        <h3>Nutrition</h3>
+        <p>Provide daily meals for students in need through our feeding program.</p>
+      </div>
+      
+      <div class="impact-card">
+        <i class="fas fa-book-open"></i>
+        <h3>Library</h3>
+        <p>Expand our library with new books and digital resources.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Options -->
+  <section class="donation-options">
+    <h2>Choose Your Impact</h2>
+    <p>Select a giving level that works for you. Every amount makes a difference!</p>
+    
+    <div class="option-cards">
+      <div class="option-card">
+        <h3>Supporter</h3>
+        <div class="price">R500</div>
+        <ul>
+          <li>Buys textbooks for 2 students</li>
+          <li>Funds science lab materials</li>
+          <li>Supports our sports program</li>
+        </ul>
+        <button class="btn-donate">Donate Now</button>
+      </div>
+      
+      <div class="option-card">
+        <h3>Champion</h3>
+        <div class="price">R1,500</div>
+        <ul>
+          <li>Covers a month of meals for 5 students</li>
+          <li>Funds art & music supplies</li>
+          <li>Supports teacher training</li>
+        </ul>
+        <button class="btn-donate">Donate Now</button>
+      </div>
+      
+      <div class="option-card">
+        <h3>Visionary</h3>
+        <div class="price">R5,000+</div>
+        <ul>
+          <li>Sponsors a full scholarship</li>
+          <li>Funds technology upgrades</li>
+          <li>Names you as a benefactor</li>
+        </ul>
+        <button class="btn-donate">Donate Now</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Donation Form -->
+  <section id="donate-now" class="donation-form-section">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Make Your Donation</h2>
+    
+    <div class="donation-form">
+      <form>
+        <div class="form-group">
+          <label>Select Fund</label>
+          <select>
+            <option>General Student Fund (Most Needed)</option>
+            <option>Scholarship Program</option>
+            <option>Technology Upgrade</option>
+            <option>Sports Development</option>
+            <option>Arts & Culture</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Donation Amount (ZAR)</label>
+          <div class="amount-options">
+            <button type="button" class="amount-option">R200</button>
+            <button type="button" class="amount-option active">R500</button>
+            <button type="button" class="amount-option">R1,000</button>
+            <button type="button" class="amount-option">R2,500</button>
+            <button type="button" class="amount-option">R5,000</button>
+          </div>
+          <input type="number" placeholder="Or enter custom amount">
+        </div>
+        
+        <div class="form-group">
+          <label>Payment Frequency</label>
+          <div style="display: flex; gap: 1rem;">
+            <label style="flex: 1;">
+              <input type="radio" name="frequency" checked> One-Time
+            </label>
+            <label style="flex: 1;">
+              <input type="radio" name="frequency"> Monthly
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>Personal Information</label>
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address" style="margin-top: 0.5rem;">
+        </div>
+        
+        <div class="form-group">
+          <label>Payment Method</label>
+          <div class="payment-methods">
+            <div class="payment-method active">
+              <i class="fab fa-cc-visa"></i>
+              <div>Credit Card</div>
+            </div>
+            <div class="payment-method">
+              <i class="fas fa-university"></i>
+              <div>EFT/Bank Transfer</div>
+            </div>
+            <div class="payment-method">
+              <i class="fab fa-paypal"></i>
+              <div>PayPal</div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="margin: 1.5rem 0;">
+          <input type="checkbox" id="tax-receipt">
+          <label for="tax-receipt">I would like a tax receipt (Section 18A deductible)</label>
+        </div>
+        
+        <button type="submit" class="btn-submit">
+          Complete Donation <i class="fas fa-lock"></i>
+        </button>
+        
+        <p class="security-note">
+          <i class="fas fa-shield-alt"></i> 100% Secure Payment Processing
+        </p>
+      </form>
+    </div>
+  </section>
+
+
+<!-- Quick Links Section -->
+  <section class="quick-links">
+    <div class="container">
+      <h2 class="section-title">Quick Links</h2>
+      <div class="links-grid">
+        <div class="link-card">
+          <h3><i class="fas fa-user-graduate"></i> Students</h3>
+          <ul>
+            <li><a href="#">Timetables</a></li>
+            <li><a href="#">Exam Schedule</a></li>
+          </ul>
+        </div>
+        <div class="link-card">
+          <h3><i class="fas fa-user-friends"></i> Parents</h3>
+          <ul>
+            <li><a href="#">School Calendar</a></li>
+            <li><a href="#">Fee Information</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </div>
+        <div class="link-card">
+          <h3><i class="fas fa-book"></i> Academics</h3>
+          <ul>
+            <li><a href="#">Subject Choices</a></li>
+            <li><a href="#">Tutoring Schedule</a></li>
+            <li><a href="#">Library Resources</a></li>
+            <li><a href="#">Career Guidance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <address>
+            1658 BUSHVELD ROAD<br>
+            WINTERVELDT<br>
+            0198<br>
+            Pretoria, Gauteng
+          </address>
+          <p><i class="fas fa-phone"></i> +27 65 558 3538</p>
+          <i class="fas fa-envelope"></i><a href="mailto:info@irlesolanghigh.edu.za"> info@irlesolanghigh.edu.za</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>School Hours</h3>
+          <p>Monday - Friday: 7:30am - 3:00pm</p>
+          <p>Office Hours: 7:00am - 4:00pm</p>
+          <p>Closed on weekends and public holidays</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://web.facebook.com/profile.php?id=100067744445272"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p>Subscribe to our newsletter for updates</p>
+        </div>
+      </div>
+</body>
+
+<footer class="copyright-footer">
+  <p>&copy; 2025 I.R. Lesolang Secondary School. All rights reserved.</p>
+</footer>
+
+</html>
